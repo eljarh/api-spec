@@ -103,7 +103,7 @@
             "type": "string",
             "example": "yyyy-mm-dd"
           },
-          "gyldigtil: {
+          "gyldigtil": {
             "descrdiption": "Dato streng som angir gyldig til dato",
             "type": "string",
             "example": "yyyy-mm-dd"
