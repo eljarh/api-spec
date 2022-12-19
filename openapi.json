@@ -92,6 +92,21 @@
             "description": "hvor kommer dataene opprinnelig fra, i.e., matrikkel, slf, brreg, osv",
             "type": "string",
             "example": "matrikkel"
+          },
+          "tilsynsobjekt": {
+            "description": "Lenke til driftsansvarlig objekt i MATS",
+            "type": "string",
+            "example": "Z22120012345ABCDE_Tilsynsobjekt"
+          },
+          "gyldigfra": {
+            "description": "Dato streng som angir gyldig fra dato",
+            "type": "string",
+            "example": "yyyy-mm-dd"
+          },
+          "gyldigtil: {
+            "descrdiption": "Dato streng som angir gyldig til dato",
+            "type": "string",
+            "example": "yyyy-mm-dd"
           }
         },
         "required": ["identifikasjonsnummer", "identifikasjonstypekode"]
