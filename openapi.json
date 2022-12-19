@@ -184,17 +184,17 @@
             "example": "yyyy-MM-ddThh:mm:ssZ"
           },
           "gyldigtil": {
-            "descrdiption": "Dato streng som angir gyldig til dato",
+            "description": "Dato streng som angir gyldig til dato",
             "type": "string",
             "example": "yyyy-MM-ddThh:mm:ssZ"
           },
           "sisteendring": {
-            "descrdiption": "Dato streng som angir gyldig til dato",
+            "description": "Dato streng som angir gyldig til dato",
             "type": "string",
             "example": "yyyy-MM-ddThh:mm:ssZ"
           },
           "slettet": {
-            "descrdiption": "Status fra eksternt system",
+            "description": "Status fra eksternt system",
             "type": "string",
             "example": 1
           }
