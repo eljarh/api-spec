@@ -63,53 +63,143 @@
       "Produksjonsplass": {
         "type": "object",
         "properties": {
-          "identifikasjonsnummer": {
+          "dyreholdid": {
             "type": "string",
             "description": "en identifikasjon som du bruker for å finne fram denne enheten/identiteten i ditt system, også kalt identifikasjonsnummer i andre systemer",
             "example": "123123"
           },
-          "identifikasjonstypekode": {
-            "description": "for å kunne støtte flere kilder må man kunne gjennbruke informasjonsnummer for hver kilde, også kalt identifikasjontypeKode i andre systemer",
+          "produsentnummer": {
             "type": "string",
-            "example": 1
+            "description": "en identifikasjon som du bruker for å finne fram denne enheten/identiteten i ditt system, også kalt identifikasjonsnummer i andre systemer",
+            "example": "123123"
           },
-          "point": {
+          "knr": {
+            "type": "string",
+            "description": "kommunenummer",
+            "example": "[0123]-1/2"
+          },
+          "gnr": {
+            "type": "string",
+            "description": "bruksnummer",
+            "example": "0123-1/[2]"
+          },
+          "bnr": {
+            "type": "string",
+            "description": "bruksnummer",
+            "example": "0123-[1]/2"
+          },
+          "fnr": {
+            "type": "string",
+            "description": "festenummer",
+            "example": "0123-1/2/[1]"
+          },
+          "gateadresse": {
+            "type": "string",
+            "description": "gateadresse",
+            "example": "Storgata 1"
+          },
+          "postnummer": {
+            "type": "string",
+            "description": "postnummer",
+            "example": "2380"
+          },
+          "poststed": {
+            "type": "string",
+            "description": "poststed",
+            "example": "brumunddal"
+          },
+          "godkjenningsnummer": {
+            "type": "string",
+            "description": "Godkjennings nummer for aktiviteter som har det",
+            "example": "NO-12345"
+          },
+          "aktivitet": {
+            "type": "string",
+            "description": "dyrerelatert aktivitet (overordnet)",
+            "example": "AKTIVITET$SAUEHOLD"
+          },
+          "produksjonsformer": {
+            "type": "string",
+            "description": "komma separert liste med spesifikke aktiviteter",
+            "example": "Melkeproduksjon, Kjøttproduksjon"
+          },
+          "epoint": {
             "description": "string representasjon av SDO_UTIL.TO_WKTGEOMETRY",
             "type": "string",
             "example": "POINT (212636.798843267 6645426.47667482)"
           },
-          "koordinatsystem": {
+          "ekoordsys": {
             "description": "koordinatsystem som skal brukes for å representere point, mest typisk er 25833",
             "type": "string",
             "example": "25833"
           },
-          "geomMaster":{
-            "description": "hvor dataene fra, ikke hvor kilden er, men f.eks mats selvom kilden er matrikkel",
-            "type": "string",
-            "example": "mats"
-          },
-          "geomKilde": {
+          "egeomkilde": {
             "description": "hvor kommer dataene opprinnelig fra, i.e., matrikkel, slf, brreg, osv",
             "type": "string",
             "example": "matrikkel"
+          },
+          "ipoint": {
+            "description": "string representasjon av SDO_UTIL.TO_WKTGEOMETRY",
+            "type": "string",
+            "example": "POINT (212636.798843267 6645426.47667482)"
+          },
+          "ikoordsys": {
+            "description": "koordinatsystem som skal brukes for å representere point, mest typisk er 25833",
+            "type": "string",
+            "example": "25833"
+          },
+          "igeomkilde": {
+            "description": "hvor kommer dataene opprinnelig fra, i.e., matrikkel, slf, brreg, osv",
+            "type": "string",
+            "example": "matrikkel"
+          },
+          "geom_master":{
+            "description": "hvor dataene fra, ikke hvor kilden er, men f.eks mats selvom kilden er matrikkel",
+            "type": "string",
+            "example": "mats"
           },
           "tilsynsobjekt": {
             "description": "Lenke til driftsansvarlig objekt i MATS",
             "type": "string",
             "example": "Z22120012345ABCDE_Tilsynsobjekt"
           },
+          "tilsynsobjektnavn": {
+            "description": "Navn på objekt i MATS (brukes primært for analyse/raffinering)",
+            "type": "string",
+            "example": "Hobbyfjørfe"
+          },
+          "bruksnavn": {
+            "description": "Bruksnavn fra MATS (brukes primært for analyse/raffinering)",
+            "type": "string",
+            "example": "MinGård"
+          },
+          "bessoekknr": {
+            "description": "Besøksadresse kommunenr (brukes primært for analyse/raffinering)",
+            "type": "string",
+            "example": "0420"
+          },
           "gyldigfra": {
             "description": "Dato streng som angir gyldig fra dato",
             "type": "string",
-            "example": "yyyy-mm-dd"
+            "example": "yyyy-MM-ddThh:mm:ssZ"
           },
           "gyldigtil": {
             "descrdiption": "Dato streng som angir gyldig til dato",
             "type": "string",
-            "example": "yyyy-mm-dd"
+            "example": "yyyy-MM-ddThh:mm:ssZ"
+          },
+          "sisteendring": {
+            "descrdiption": "Dato streng som angir gyldig til dato",
+            "type": "string",
+            "example": "yyyy-MM-ddThh:mm:ssZ"
+          },
+          "slettet": {
+            "descrdiption": "Status fra eksternt system",
+            "type": "string",
+            "example": 1
           }
         },
-        "required": ["identifikasjonsnummer", "identifikasjonstypekode"]
+        "required": ["geom_master"]
       }
     }
   }
