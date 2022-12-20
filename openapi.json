@@ -13,15 +13,27 @@
 
   "servers": [
     {
-      "url": "{endringsservice_url}",
+      "url": "{schema}://{server}/{basePath}",
       "description": "to be used for substitution",
       "variables": {
-        "endringsserivce_url": {
-          "default": "http://replace.server.not",
+        "schema": {
+          "enum": [
+            "http",
+            "https"
+          ],
+          "default": "https",
           "description": "to ensure correct operation of openapi generate"
+        },
+        "server": {
+          "default": "replace.server.not",
+          "description": "to ensure correct operation of openapi generate"
+        },
+        "basePath": {
+          "default": "",
+          "description": "used to establish basePath before endpoints"
         }
       }
-    }
+    },
   ],
 
   "paths": {
