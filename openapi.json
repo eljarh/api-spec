@@ -14,7 +14,13 @@
   "servers": [
     {
       "url": "{endringsservice_url}",
-      "description": "to be used for substitution"
+      "description": "to be used for substitution",
+      "variables": {
+        "endringsserivce_url": {
+          "default": "http://replace.server.not:port",
+          "description": "to ensure correct operation of openapi generate"
+        }
+      }
     }
   ],
 
