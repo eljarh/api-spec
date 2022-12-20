@@ -13,7 +13,8 @@
 
   "servers": [
     {
-      "url": "https"
+      "url": "{endringsservice_url}",
+      "description": "to be used for substitution"
     }
   ],
 
