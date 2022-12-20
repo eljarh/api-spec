@@ -212,7 +212,7 @@
           },
           "slettet": {
             "description": "Status fra eksternt system",
-            "type": "string",
+            "type": "number",
             "example": 1
           }
         },
