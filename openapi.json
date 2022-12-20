@@ -13,16 +13,15 @@
 
   "servers": [
     {
-      "url": "{schema}://{server}/{basePath}",
+      "url": "{scheme}://{server}/{basePath}",
       "description": "to be used for substitution",
       "variables": {
-        "schema": {
+        "scheme": {
           "enum": [
             "http",
             "https"
           ],
-          "default": "https",
-          "description": "to ensure correct operation of openapi generate"
+          "default": "https"
         },
         "server": {
           "default": "replace.server.not",
