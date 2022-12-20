@@ -13,23 +13,22 @@
 
   "servers": [
     {
-      "url": "https://{server}/{basePath}",
+      "url": "https://{server}",
       "description": "to be used for substitution",
       "variables": {
-        "scheme": {
-          "enum": [
-            "http",
-            "https"
-          ],
-          "default": "https"
-        },
         "server": {
           "default": "replace.server.not",
           "description": "to ensure correct operation of openapi generate"
-        },
-        "basePath": {
-          "default": "",
-          "description": "used to establish basePath before endpoints"
+        }
+      }
+    },
+    {
+      "url": "http://{server}",
+      "description": "to be used for non-tls test connection",
+      "variables": {
+        "server": {
+          "default": "replace.server.not",
+          "description": "to ensure correct operation of openapi generate"
         }
       }
     }
