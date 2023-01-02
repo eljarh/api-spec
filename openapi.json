@@ -119,7 +119,7 @@
             "description": "Status fra eksternt system",
             "type": "number",
             "example": 1
-          }
+          },
           "gateadresse": {
             "type": "string",
             "description": "gateadresse",
