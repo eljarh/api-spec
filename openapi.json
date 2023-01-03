@@ -111,7 +111,12 @@
             "example": "yyyy-MM-ddThh:mm:ssZ"
           },
           "sisteendring": {
-            "description": "Dato streng som angir gyldig til dato",
+            "description": "Dato streng som angir siste endring av objektet i MATS",
+            "type": "string",
+            "example": "yyyy-MM-ddThh:mm:ssZ"
+          },
+          "opprettetdato": {
+            "description": "Dato streng som angir når objektet er opprettet",
             "type": "string",
             "example": "yyyy-MM-ddThh:mm:ssZ"
           },
@@ -119,21 +124,6 @@
             "description": "Status fra eksternt system",
             "type": "number",
             "example": 1
-          },
-          "gateadresse": {
-            "type": "string",
-            "description": "gateadresse",
-            "example": "Storgata 1"
-          },
-          "postnummer": {
-            "type": "string",
-            "description": "postnummer",
-            "example": "2380"
-          },
-          "poststed": {
-            "type": "string",
-            "description": "poststed",
-            "example": "brumunddal"
           },
           "dyreholdid": {
             "type": "string",
@@ -179,6 +169,21 @@
             "description": "Besøksadresse kommunenr (brukes primært for analyse/raffinering)",
             "type": "string",
             "example": "0420"
+          },
+          "gateadresse": {
+            "type": "string",
+            "description": "gateadresse",
+            "example": "Storgata 1"
+          },
+          "postnummer": {
+            "type": "string",
+            "description": "postnummer",
+            "example": "2380"
+          },
+          "poststed": {
+            "type": "string",
+            "description": "poststed",
+            "example": "brumunddal"
           },
           "ipoint": {
             "description": "string representasjon av SDO_UTIL.TO_WKTGEOMETRY",
