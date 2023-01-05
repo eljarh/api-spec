@@ -79,17 +79,17 @@
         "summary": "hent en produksjonsplass",
         "description": "",
         "operationId": "getProduksjonsplass",
-        "parameters": {
-          "name": "tilsynsobjekt",
-          "in": "path",
-          "description": "username to fetch",
-          "required": true,
-          "schema": {
-            "type": "string"
-            }
-          },
-          "required": true
-        },
+        "parameters": [
+          {
+            "name": "tilsynsobjekt",
+            "in": "path",
+            "description": "username to fetch",
+            "required": true,
+            "schema": {
+              "type": "string"
+              }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK",
