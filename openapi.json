@@ -71,8 +71,45 @@
             "description": "Validering misslykkes"
           }
         }
+      },
+      "get": {
+        "tags": [
+          "produksjonsplass"
+        ],
+        "summary": "hent en produksjonsplass",
+        "description": "",
+        "operationId": "getProduksjonsplass",
+        "parameters": {
+          "name": "tilsynsobjekt",
+          "in": "path",
+          "description": "username to fetch",
+          "required": true,
+          "schema": {
+            "type": "string"
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Produksjonsplass"
+                }
+              }
+            }
+          },
+          "400":  {
+            "description": "Ugyldig forespørsekl"
+          },
+          "404": {
+            "description": "fant ikke produksjonsplass"
+          }
+        }
       }
-  }
+    }
   },
 
   "components": {
