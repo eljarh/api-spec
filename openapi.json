@@ -35,7 +35,7 @@
   ],
 
   "paths": {
-    "/produksjonsplass": {
+    "/produksjonsplass/{tilsynsobjekt}": {
       "post": {
         "tags": [
           "produksjonsplass"
