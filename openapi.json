@@ -11,29 +11,6 @@
     }
   },
 
-  "servers": [
-    {
-      "url": "https://{server}",
-      "description": "to be used for substitution",
-      "variables": {
-        "server": {
-          "default": "replace.server.not",
-          "description": "to ensure correct operation of openapi generate"
-        }
-      }
-    },
-    {
-      "url": "http://{server}",
-      "description": "to be used for non-tls test connection",
-      "variables": {
-        "server": {
-          "default": "replace.server.not",
-          "description": "to ensure correct operation of openapi generate"
-        }
-      }
-    }
-  ],
-
   "paths": {
     "/produksjonsplass": {
       "post": {
