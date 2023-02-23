@@ -235,6 +235,11 @@
             "description": "hvor dataene fra, ikke hvor kilden er, men f.eks mats selvom kilden er matrikkel",
             "type": "string",
             "example": "mats"
+          },
+          "business_objects":{
+            "description": "Tekst representasjon av JSON-array med objekter av key-values fra Businessobjects attribute tabellen i MATS",
+            "type": "string",
+            "example": "mats"
           }
         }
       }
