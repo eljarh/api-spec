@@ -62,7 +62,7 @@
           {
             "name": "tilsynsobjekt",
             "in": "path",
-            "description": "username to fetch",
+            "description": "tilsynsobjekt to fetch",
             "required": true,
             "schema": {
               "type": "string"
@@ -81,7 +81,7 @@
             }
           },
           "400":  {
-            "description": "Ugyldig forespørsekl"
+            "description": "Ugyldig forespørsel"
           },
           "404": {
             "description": "fant ikke produksjonsplass"
