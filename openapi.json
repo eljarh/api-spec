@@ -239,7 +239,7 @@
           "business_objects":{
             "description": "Tekst representasjon av JSON-array med objekter av key-values fra Businessobjects attribute tabellen i MATS",
             "type": "string",
-            "example": "mats"
+            "example": "[ { \"navn\": \"Hoensefugler\", \"verdi\": \"18\" },{ \"navn\": \"Andefugler\", \"verdi\": \"4\" },{ \"navn\": \"Andre\", \"verdi\": \"0\" },{ \"navn\": \"Duer\", \"verdi\": \"0\" } ]"
           }
         }
       }
