@@ -10,7 +10,18 @@
       "email": "no-spam@mattilsynet.no"
     }
   },
-
+  "servers": [
+    {
+      "url": "{server}",
+      "description": "Applications must specify protocol and server endpoint to run successfully",
+      "variables": {
+        "server": {
+          "default": "http://replace.server.now",
+          "description": "Replace with protocol + server from application config"
+        }
+      }
+    }
+  ],
   "paths": {
     "/produksjonsplass": {
       "post": {
